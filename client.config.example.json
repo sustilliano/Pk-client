@@ -1,0 +1,67 @@
+{
+  "project": "conversationchain",
+  "workingTreeName": "conversationchain-current",
+  "snapshotPrefix": "cc",
+  "defaultAllowedFiles": [
+    "server.js",
+    "package.json",
+    "package-lock.json",
+    "render.yaml",
+    "public/**",
+    "admin/**",
+    "server/**",
+    "tools/**",
+    "migrations/**",
+    "PLANEKEY_INTEGRATION.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "defaultForbiddenPaths": [
+    ".env",
+    ".env.*",
+    "node_modules/**",
+    ".git/**",
+    "planekey-history/**",
+    "debug/**",
+    "shell-snapshots/**",
+    "uploads/**",
+    "database/**",
+    "sessions/**",
+    "tmp/**",
+    "logs/**",
+    ".planekey/rabbit/**",
+    "*.rabbit",
+    "*.pem",
+    "*.key",
+    "*.p12",
+    "*.sqlite",
+    "*.db"
+  ],
+  "rootRabbit": {
+    "enabled": true,
+    "requiredFiles": ["server.js"],
+    "installedFiles": [
+      "server/security/root-rabbit.js",
+      "server.js",
+      "admin/planekey.html"
+    ],
+    "minimumZonesWhenInstalled": 3
+  },
+  "safetyNet": {
+    "enabled": true,
+    "hutchEnabled": true,
+    "flightEnabled": true,
+    "preferProjectTools": true,
+    "minimumHutchScore": 0.85,
+    "minimumFlightScore": 0.85
+  },
+  "bridge": {
+    "token": "",
+    "hmacSecret": "",
+    "serviceId": "planekey-home-bridge"
+  },
+  "publicRepo": {
+    "enabled": true,
+    "failOnSecretHits": true
+  }
+}

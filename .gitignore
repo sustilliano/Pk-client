@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+vault/
+working/
+exports/
+reports/
+inventory/
+patches/
+bundles/
+*.sqlite
+*.db
+*.rabbit
+.planekey/rabbit/
+tmp/
+logs/

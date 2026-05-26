@@ -1,0 +1,24 @@
+{
+  "name": "planekey-client",
+  "version": "1.5.7",
+  "description": "PlaneKey client CLI — integrity attestations, SafetyNet, RepoGuard, reverse rebuild, AI-coherence, tri-layer indexes, edge/cloudflare defensive routing.",
+  "type": "commonjs",
+  "bin": {
+    "pk-client": "./bin/pk-client.js",
+    "planekey-client": "./bin/pk-client.js"
+  },
+  "scripts": {
+    "start": "node ./bin/pk-client.js",
+    "selftest": "node ./bin/pk-client.js --help && node ./bin/pk-client.js init ./_demo_workspace"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sustilliano/pk-client.git"
+  },
+  "keywords": ["planekey", "integrity", "attestation", "safetynet", "repoguard", "ai-coherence"],
+  "author": "sustilliano"
+}
